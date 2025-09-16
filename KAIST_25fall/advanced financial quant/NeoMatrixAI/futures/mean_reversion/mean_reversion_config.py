@@ -1,11 +1,11 @@
-
-# ============================
-# futures/mean_reversion/mean_reversion_config.py
-# ============================
-
 strategy_config = {
-    "window": 20,                # rolling window size
-    "num_std": 2.0,              # Bollinger band multiplier
-    "long_allocation_pct": 0.5,  # share allocated across longs
-    "short_allocation_pct": 0.5  # share allocated across shorts
+    "window": 20,
+    "num_std": 2,
+    "long_allocation_pct": 0.5,
+    "short_allocation_pct": 0.5,
+    "strength_power": 1.0,
+    "strength_cap": 3.0,
+    "fallback_enabled": True,
+    "fallback_top_n": 2,
+    "fallback_frac_cap": 0.5,
 }
